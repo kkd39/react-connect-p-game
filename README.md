@@ -1,0 +1,2 @@
+# react-connect-p-game
+Connect 4’ is a game for two players. It consists of a 6x7 vertical grid into which a red or a yellow disc is placed by each player in turn. Each of the players take turns to place their coloured disc onto the grid. The object of the game is to be the first to obtain a (winning) straight line consisting of their set of symbols, these being either 4 red discs or 4 yellow discs.
