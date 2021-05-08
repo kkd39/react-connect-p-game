@@ -208,6 +208,8 @@ function calculateWinner(squares, val, conn) {
   let position = 0;
   let reversePosition = 0;
   for (let i = 0; i < rowLen; i++) {
+    rowCount = 0;
+    colCount = 0;
     countOne[i] = 0;
     countTwo[i] = 0;
     countThree[i] = 0;
@@ -216,7 +218,7 @@ function calculateWinner(squares, val, conn) {
     reversePosition = (rowLen - 1) - i;
     for (let j = 0; j < colLen; j++) {
       rowCount = (copy[i][j] === val) ? (rowCount + 1) : 0;
-      colCount = (copy[j][i] === val) ? (colCount + 1) : 0;
+      colCount = (copy[j][i] === val) ? (colCount + 1): 0;
       countOne[i] = (copy[(colLen - 1) - j][position] === val) ? (countOne[i] + 1) : 0;
       countTwo[i] = (copy[j][position] === val) ? (countTwo[i] + 1) : 0;
       countThree[i] = (copy[(colLen - 1) - j][reversePosition] === val) ? (countThree[i] + 1) : 0;
